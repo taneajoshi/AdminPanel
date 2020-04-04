@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard1</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  
+   
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#"> <img src="images/logo.jpeg" alt="btkit logo" width="75px" height="75px"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="dashboard1.html">Dashboard</a>
+                          </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Add Admin</a>
+                          </li>
+                        
+                      </ul>
+    
+                      <div class="logout">
+                          <button class="logO">Logout</button>
+                      </div>
+                    </div>
+                  </nav>
+        </header>
+             
+        <main>
+
+
+
+<form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <a  href="#" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</a>
+                      </form> 
+
+
+<div class="container pagewrapper">
+    <h2 id="admn">Admin Page</h2>
+    <hr>
+<div class="row">
+    <div class="col-3">
+        <div class="card">
+            <div class="card-block">
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">List of patients</a>
+                    <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Reported Gathering</a>
+                    <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Add Notice</a>
+                    <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Recent Users</a>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-9">
+        
+        <div class="card">
+
+           
+                <div class="tab-content" id="v-pills-tabContent">
+                  <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                      <a href="#">
+                          <button class="btn btn-primary addPatients">Add patients</button>
+                      </a>
+                      <div class="addNewPatients">
+                        <headings class=" d-flex justify-content-between"> 
+                            <div class="id pa">Id</div>
+                            <div class="name pa ">Name</div>
+                            <div class="age pa">Age</div>
+                            <div class="sex pa">Sex</div>
+                            <div class="number pa">Number</div>
+                            <div class="edit">Edit</div>
+                            <div class="remove">Remove</div>
+                        </headings>
+                        <child class="d-flex justify-content-between">
+                            <div class="id">1</div>
+                            <div class="name">Ravi Roy</div>
+                            <div class="age">22</div>
+                            <div class="sex">Male</div>
+                            <div class="number"> 9478459845 </div>
+                            <div class="edit"><a href="#"><button>Edit</button> </a></div>
+                            <div class="remove"><a href="#"><button>X</button></a></div>
+                        </child>
+                        <child class="d-flex justify-content-between">
+                            <div class="id">2</div>
+                            <div class="name">Mohit Jain</div>
+                            <div class="age">24</div>
+                            <div class="sex">Male</div>
+                            <div class="number"> 9478459845 </div>
+                            <div class="edit"><a href="#"><button>Edit</button> </a></div>
+                            <div class="remove"><a href="#"><button>X</button></a></div>
+                        </child>
+
+
+
+                      </div>
+
+
+
+
+                  </div>
+                  <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                  <h2 style="font-size: 17px; text-align: center;"> Gatherings reported</h2>
+                  <div class="gatherReport ">
+                    <headings class="mar d-flex justify-content-between"> 
+                        <div class="name pa">Name</div>
+                        <div class="phone pa ">Phone number</div>
+                        <div class="location pa">Location</div>
+                        
+                    </headings>
+                    <div class="noReport show">
+                    <p>
+                        No new gatherings reported yet.
+                    </p>
+                </div>
+
+                  </div>
+
+                  </div>
+                  <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                    <a href="#">
+                        <button class="btn btn-primary addPatients">Add Notice</button>
+                    </a>
+                    <div class="noti">
+                        <h4>Added Notifications:</h4>
+                         <div class="notiList">
+                             <notice class=" d-flex " >
+                                 <div class="file">
+                                  <p>Views on trending hashtag IndiaFightsCorona COVID-19.</p>
+                                 </div>
+                                 <div class="editNoti"><button>Edit</button> </div>
+                                 <div class="removeNoti"><button>X</button></div>
+                             </notice>
+
+                             <notice class=" d-flex ">
+                                <div class="file">
+                                 <p>Active cased to reach 3000 in India.</p>
+                                </div>
+                                <div class="editNoti"><button>Edit</button> </div>
+                                <div class="removeNoti"><button>X</button></div>
+                            </notice>
+                         </div>
+                    </div>
+
+
+
+
+                  </div>
+                  <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                    <div class="Users">
+                        <headings class=" d-flex justify-content-between"> 
+                            <div class="name pa">Name</div>
+                            <div class="contact  pa ">Contact Number</div>
+                            <div class="email pa">Email</div>
+                            <div class="tyle pa">Type</div>
+                            <div class="edit">Edit</div>
+                            <div class="remove">Remove</div>
+                        </headings>
+                        <child class="d-flex justify-content-between">
+                            <div class="name pa">Ramesh Yadav</div>
+                            <div class="contact  pa ">7584496842</div>
+                            <div class="email pa">ramesh12@gmail.com</div>
+                            <div class="tyle pa">-</div>
+                            <div class="edit"><a href="#"><button>Edit</button> </a></div>
+                            <div class="remove"><a href="#"><button>X</button></a></div>
+                        </child>
+                  </div>
+                </div>
+             
+                   
+
+
+
+                  </div>
+
+           
+            </div>
+
+            </div>
+        </div>
+        </div>
+  
+
+
+</div>
+
+
+    
+        </main>
+    
+
+          
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
